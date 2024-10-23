@@ -1076,12 +1076,6 @@
 		})();
 	
 	// Icons: buttonfooter.
-		$('#buttonfooter > li:nth-child(2) > a').addEventListener(
-			'click',
-			function(event) { 
-				triggerModal()
-			}
-		);
 		
 		$('#buttonfooter > li:nth-child(3) > a').addEventListener(
 			'click',
