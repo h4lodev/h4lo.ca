@@ -69,21 +69,21 @@
 										}
 										
 										.menu li a::after {
-										/* Target a pseudo-element for the underline */
 										content: "";
 										position: absolute;
 										bottom: 2px; /* Distance from the text */
-										left: 50%; /* Center the underline */
+										left: 0; /* Start the underline from the left */
 										width: 0; /* Initial width is 0 */
 										height: 2px;
 										background-color: var(--secondary-color);
-										transition: width 0.3s ease-in-out; /* Control the transition effect */
+										transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Add transition for left */
 										}
-										
+
 										.menu li a:hover::after {
 										width: 100%; /* Expand to full width on hover */
-										left: 0; /* Start the underline from the left */
+										left: 0; /* Keep starting position from the left */
 										}
+										
 										
 										/* Hover effect for submenu items */
 										/* Hamburger Styling */
