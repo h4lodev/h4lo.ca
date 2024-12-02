@@ -80,7 +80,6 @@ spoiler-text {
 	-webkit-text-stroke: 0;
 	background-color: rgba(32,32,32,0.75);
 	text-shadow: none;
-	text-stroke: 0;
 	color: transparent;
 	cursor: pointer;
 	transition: color 0.1s ease-in-out;
@@ -1221,7 +1220,9 @@ hr:before {
 }
 
 .image .frame {
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0, 0, 0);
 	display: inline-block;
 	max-width: 100%;
@@ -1324,6 +1325,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1343,6 +1345,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text05 span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
@@ -1402,6 +1405,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1421,6 +1425,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text09 span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
@@ -1459,6 +1464,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1478,6 +1484,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text06 span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
