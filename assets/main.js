@@ -1,4 +1,5 @@
 (function() {
+
 	// Main.
 		var	on = addEventListener,
 			off = removeEventListener,
