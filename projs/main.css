@@ -80,6 +80,7 @@ spoiler-text {
 	-webkit-text-stroke: 0;
 	background-color: rgba(32,32,32,0.75);
 	text-shadow: none;
+	text-stroke: 0;
 	color: transparent;
 	cursor: pointer;
 	transition: color 0.1s ease-in-out;
@@ -759,7 +760,7 @@ hr:before {
 
 #constuction.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #constuction.columns > .wrapper > .inner > .full:first-child {
@@ -898,7 +899,7 @@ hr:before {
 
 #container07.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #container07.columns > .wrapper > .inner > .full:first-child {
@@ -1045,7 +1046,7 @@ hr:before {
 
 #shelf2.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #shelf2.columns > .wrapper > .inner > .full:first-child {
@@ -1192,7 +1193,7 @@ hr:before {
 
 #shelf3.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #shelf3.columns > .wrapper > .inner > .full:first-child {
@@ -1531,8 +1532,6 @@ hr:before {
 
 .image .frame {
 	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transform: translate3d(0, 0, 0);
 	-webkit-transform: translate3d(0, 0, 0);
 	display: inline-block;
 	max-width: 100%;
@@ -1585,18 +1584,18 @@ hr:before {
 	transition: none;
 }
 
-#image17 {
+#blastwall {
 	text-align: center;
 }
 
-#image17 .frame {
+#blastwall .frame {
 	width: 10rem;
 	height: 10rem;
 	border-radius: 1rem;
 	transition: none;
 }
 
-#image17 img {
+#blastwall img {
 	height: 100% !important;
 	object-fit: cover;
 	object-position: center;
@@ -1605,7 +1604,7 @@ hr:before {
 	user-select: none;
 }
 
-#image17 .frame img {
+#blastwall .frame img {
 	transition: none;
 }
 
@@ -1683,18 +1682,18 @@ hr:before {
 	z-index: 1;
 }
 
-#unnamed1 {
+#image17 {
 	text-align: center;
 }
 
-#unnamed1 .frame {
+#image17 .frame {
 	width: 10rem;
 	height: 10rem;
 	border-radius: 1rem;
 	transition: none;
 }
 
-#unnamed1 img {
+#image17 img {
 	height: 100% !important;
 	object-fit: cover;
 	object-position: center;
@@ -1703,7 +1702,7 @@ hr:before {
 	user-select: none;
 }
 
-#unnamed1 .frame img {
+#image17 .frame img {
 	transition: none;
 }
 
@@ -1793,7 +1792,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text15 {
+#unntxt1 {
 	text-align: center;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
@@ -1802,19 +1801,19 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 600;
 }
 
-#text15 a {
+#unntxt1 a {
 	text-decoration: underline;
 }
 
-#text15 a:hover {
+#unntxt1 a:hover {
 	text-decoration: none;
 }
 
-#text15 span.p:nth-child(n + 2) {
+#unntxt1 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
-#text16 {
+#desc5 {
 	text-align: center;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
@@ -1823,15 +1822,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 400;
 }
 
-#text16 a {
+#desc5 a {
 	text-decoration: underline;
 }
 
-#text16 a:hover {
+#desc5 a:hover {
 	text-decoration: none;
 }
 
-#text16 span.p:nth-child(n + 2) {
+#desc5 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -1961,7 +1960,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#unntxt1 {
+#text15 {
 	text-align: center;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
@@ -1970,19 +1969,19 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 600;
 }
 
-#unntxt1 a {
+#text15 a {
 	text-decoration: underline;
 }
 
-#unntxt1 a:hover {
+#text15 a:hover {
 	text-decoration: none;
 }
 
-#unntxt1 span.p:nth-child(n + 2) {
+#text15 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
-#desc5 {
+#text16 {
 	text-align: center;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
@@ -1991,15 +1990,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 400;
 }
 
-#desc5 a {
+#text16 a {
 	text-decoration: underline;
 }
 
-#desc5 a:hover {
+#text16 a:hover {
 	text-decoration: none;
 }
 
-#desc5 span.p:nth-child(n + 2) {
+#text16 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -2471,7 +2470,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#constuction.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	
@@ -2484,7 +2483,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container07.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	
@@ -2501,7 +2500,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#shelf2.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	
@@ -2518,7 +2517,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#shelf3.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	
@@ -2592,12 +2591,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: 100% !important;
 	}
 	
-	#image17 .frame {
+	#blastwall .frame {
 		width: 10rem;
 		height: 12.5rem !important;
 	}
 	
-	#image17 img {
+	#blastwall img {
 		height: 100% !important;
 		object-fit: cover;
 		object-position: center;
@@ -2640,12 +2639,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: 100% !important;
 	}
 	
-	#unnamed1 .frame {
+	#image17 .frame {
 		width: 10rem;
 		height: 12.5rem !important;
 	}
 	
-	#unnamed1 img {
+	#image17 img {
 		height: 100% !important;
 		object-fit: cover;
 		object-position: center;
@@ -2682,14 +2681,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.25;
 	}
 	
-	#text15 {
+	#unntxt1 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.125em;
 		line-height: 1.25;
 	}
 	
-	#text16 {
+	#desc5 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.125em;
@@ -2738,14 +2737,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.25;
 	}
 	
-	#unntxt1 {
+	#text15 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.125em;
 		line-height: 1.25;
 	}
 	
-	#desc5 {
+	#text16 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.125em;
@@ -2810,7 +2809,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: 6.25rem !important;
 	}
 	
-	#image17 .frame {
+	#blastwall .frame {
 		height: 10rem !important;
 	}
 	
@@ -2826,7 +2825,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: 10rem !important;
 	}
 	
-	#unnamed1 .frame {
+	#image17 .frame {
 		height: 10rem !important;
 	}
 	
@@ -2862,7 +2861,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#constuction.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#container07 > .wrapper > .inner {
@@ -2873,7 +2872,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container07.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#shelf2 > .wrapper > .inner {
@@ -2884,7 +2883,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#shelf2.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#shelf3 > .wrapper > .inner {
@@ -2895,7 +2894,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#shelf3.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#spacer2 > .wrapper > .inner {
@@ -2917,7 +2916,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: 5.46875rem !important;
 	}
 	
-	#image17 .frame {
+	#blastwall .frame {
 		height: 8.75rem !important;
 	}
 	
@@ -2933,7 +2932,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: 8.75rem !important;
 	}
 	
-	#unnamed1 .frame {
+	#image17 .frame {
 		height: 8.75rem !important;
 	}
 	
@@ -2945,11 +2944,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1em;
 	}
 	
-	#text15 {
+	#unntxt1 {
 		font-size: 1.125em;
 	}
 	
-	#text16 {
+	#desc5 {
 		font-size: 1.125em;
 	}
 	
@@ -2977,11 +2976,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1.125em;
 	}
 	
-	#unntxt1 {
+	#text15 {
 		font-size: 1.125em;
 	}
 	
-	#desc5 {
+	#text16 {
 		font-size: 1.125em;
 	}
 	
