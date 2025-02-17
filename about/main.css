@@ -80,6 +80,7 @@ spoiler-text {
 	-webkit-text-stroke: 0;
 	background-color: rgba(32,32,32,0.75);
 	text-shadow: none;
+	text-stroke: 0;
 	color: transparent;
 	cursor: pointer;
 	transition: color 0.1s ease-in-out;
@@ -279,6 +280,13 @@ hr:before {
 	border-radius: 0px;
 }
 
+#div4:before {
+	width: 64rem;
+	background-color: transparent;
+	height: 1px;
+	border-radius: 0px;
+}
+
 #divider05:before {
 	width: 64rem;
 	background-color: transparent;
@@ -286,7 +294,7 @@ hr:before {
 	border-radius: 0px;
 }
 
-#divider01:before {
+#div1:before {
 	width: 64rem;
 	background-color: transparent;
 	height: 1px;
@@ -737,7 +745,7 @@ hr:before {
 
 #container05.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #container05.columns > .wrapper > .inner > .full:first-child {
@@ -760,14 +768,6 @@ hr:before {
 	height: 100%;
 	position: absolute;
 	width: 100%;
-}
-
-#container05 > .wrapper > .inner > :nth-child(1) {
-	width: calc(50% + (var(--gutters) / 2));
-}
-
-#container05 > .wrapper > .inner > :nth-child(2) {
-	width: calc(50% + (var(--gutters) / 2));
 }
 
 #maincont {
@@ -890,7 +890,7 @@ hr:before {
 
 #maincont.columns > .wrapper > .inner > .full {
 	align-self: stretch;
-	min-height: 25rem;
+	min-height: calc(25rem - (var(--padding-vertical) * 2));
 }
 
 #maincont.columns > .wrapper > .inner > .full:first-child {
@@ -1220,9 +1220,7 @@ hr:before {
 }
 
 .image .frame {
-	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0, 0, 0);
 	display: inline-block;
 	max-width: 100%;
@@ -1321,11 +1319,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	text-transform: uppercase;
 	color: #F49400;
 	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1.5rem;
+	width: calc(100% + 1.5rem);
 	font-size: 7em;
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1345,59 +1344,130 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text05 span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
 
-#text07 {
+#text13 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #F7F7F7;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1.5rem;
+	width: calc(100% + 1.5rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 600;
+	background-image: linear-gradient(227deg, #F7F7F7 48%, #F7F7F7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.01em transparent;
+	text-stroke: 0.01em transparent;
+}
+
+#text13 a {
+	text-decoration: underline;
+}
+
+#text13 a:hover {
+	text-decoration: none;
+}
+
+#text13 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+	-webkit-text-fill-color: currentcolor;
+}
+
+#text13 span.p {
+	background-image: linear-gradient(227deg, #F7F7F7 48%, #F7F7F7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent !important;
+}
+
+#reachme {
+	text-align: center;
+	color: #F7F7F7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.25;
+	font-weight: 600;
+}
+
+#reachme a {
+	text-decoration: underline;
+}
+
+#reachme a:hover {
+	text-decoration: none;
+}
+
+#reachme span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text-line {
+	text-align: center;
+	text-transform: uppercase;
+	color: #F7F7F7;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1.5rem;
+	width: calc(100% + 1.5rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 600;
+	background-image: linear-gradient(227deg, #F7F7F7 48%, #F7F7F7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.01em transparent;
+	text-stroke: 0.01em transparent;
+}
+
+#text-line a {
+	text-decoration: underline;
+}
+
+#text-line a:hover {
+	text-decoration: none;
+}
+
+#text-line span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+	-webkit-text-fill-color: currentcolor;
+}
+
+#text-line span.p {
+	background-image: linear-gradient(227deg, #F7F7F7 48%, #F7F7F7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent !important;
+}
+
+#knowsthis {
 	text-align: left;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 7em;
+	font-size: 2.5em;
 	line-height: 1.25;
 	font-weight: 600;
 }
 
-#text07 a {
+#knowsthis a {
 	text-decoration: underline;
 }
 
-#text07 a:hover {
+#knowsthis a:hover {
 	text-decoration: none;
 }
 
-#text07 span.p:nth-child(n + 2) {
+#knowsthis span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
-#text08 {
-	text-align: center;
-	color: #F7F7F7;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 7em;
-	line-height: 1.25;
-	font-weight: 600;
-}
-
-#text08 a {
-	text-decoration: underline;
-}
-
-#text08 a:hover {
-	text-decoration: none;
-}
-
-#text08 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text09 {
-	text-align: center;
+#knowsthisdesc {
+	text-align: left;
 	max-width: 35.875rem;
 	margin-left: var(--margin-left);
 	margin-right: var(--margin-right);
-	--margin-left: auto;
+	--margin-left: 0;
 	--margin-right: auto;
 	color: #F49400;
 	font-family: 'Montserrat', sans-serif;
@@ -1405,36 +1475,34 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-#text09 a {
+#knowsthisdesc a {
 	text-decoration: underline;
 }
 
-#text09 a:hover {
+#knowsthisdesc a:hover {
 	text-decoration: none;
 }
 
-#text09 span.p:nth-child(n + 2) {
+#knowsthisdesc span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 	-webkit-text-fill-color: currentcolor;
 }
 
-#text09 span.p {
+#knowsthisdesc span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
 
 #text02 {
-	text-align: center;
+	text-align: right;
 	color: #F7F7F7;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 7em;
+	font-size: 2.5em;
 	line-height: 1.25;
 	font-weight: 600;
 }
@@ -1451,12 +1519,69 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text06 {
-	text-align: center;
+#text07 {
+	text-align: right;
 	max-width: 35.875rem;
 	margin-left: var(--margin-left);
 	margin-right: var(--margin-right);
 	--margin-left: auto;
+	--margin-right: 0;
+	color: #F49400;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	line-height: 1.25;
+	font-weight: 600;
+	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#text07 a {
+	text-decoration: underline;
+}
+
+#text07 a:hover {
+	text-decoration: none;
+}
+
+#text07 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+	-webkit-text-fill-color: currentcolor;
+}
+
+#text07 span.p {
+	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent !important;
+}
+
+#text10 {
+	text-align: left;
+	color: #F7F7F7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.25;
+	font-weight: 600;
+}
+
+#text10 a {
+	text-decoration: underline;
+}
+
+#text10 a:hover {
+	text-decoration: none;
+}
+
+#text10 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text11 {
+	text-align: left;
+	max-width: 35.875rem;
+	margin-left: var(--margin-left);
+	margin-right: var(--margin-right);
+	--margin-left: 0;
 	--margin-right: auto;
 	color: #F49400;
 	font-family: 'Montserrat', sans-serif;
@@ -1464,27 +1589,82 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.25;
 	font-weight: 600;
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-#text06 a {
+#text11 a {
 	text-decoration: underline;
 }
 
-#text06 a:hover {
+#text11 a:hover {
 	text-decoration: none;
 }
 
-#text06 span.p:nth-child(n + 2) {
+#text11 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 	-webkit-text-fill-color: currentcolor;
 }
 
-#text06 span.p {
+#text11 span.p {
 	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
-	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent !important;
+}
+
+#text12 {
+	text-align: right;
+	color: #F7F7F7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	line-height: 1.25;
+	font-weight: 600;
+}
+
+#text12 a {
+	text-decoration: underline;
+}
+
+#text12 a:hover {
+	text-decoration: none;
+}
+
+#text12 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#wantstodesc {
+	text-align: right;
+	max-width: 35.875rem;
+	margin-left: var(--margin-left);
+	margin-right: var(--margin-right);
+	--margin-left: auto;
+	--margin-right: 0;
+	color: #F49400;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	line-height: 1.25;
+	font-weight: 600;
+	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#wantstodesc a {
+	text-decoration: underline;
+}
+
+#wantstodesc a:hover {
+	text-decoration: none;
+}
+
+#wantstodesc span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+	-webkit-text-fill-color: currentcolor;
+}
+
+#wantstodesc span.p {
+	background-image: linear-gradient(227deg, #F4BE00 48%, #F49400 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
@@ -1844,11 +2024,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: 64rem;
 	}
 	
+	#div4:before {
+		width: 64rem;
+	}
+	
 	#divider05:before {
 		width: 64rem;
 	}
 	
-	#divider01:before {
+	#div1:before {
 		width: 64rem;
 	}
 	
@@ -1983,7 +2167,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container05.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	#container05.columns > .wrapper > .inner > .full > .full:first-child:last-child {
@@ -1994,16 +2178,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: auto;
 		position: relative;
 		width: auto;
-	}
-	
-	#container05 > .wrapper > .inner > :nth-child(1) {
-		min-height: 100% !important;
-		width: 100% !important;
-	}
-	
-	#container05 > .wrapper > .inner > :nth-child(2) {
-		min-height: 100% !important;
-		width: 100% !important;
 	}
 	
 	#maincont {
@@ -2092,7 +2266,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#maincont.columns > .wrapper > .inner > .full {
-		min-height: 18.75rem;
+		min-height: calc(18.75rem - (var(--padding-vertical) * 2));
 	}
 	
 	#maincont.columns > .wrapper > .inner > .full > .full:first-child:last-child {
@@ -2184,27 +2358,41 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#text05 {
-		letter-spacing: 0rem;
-		width: 100%;
+		letter-spacing: 1.3125rem;
+		width: calc(100% + 1.3125rem);
 		font-size: 3.5em;
 		line-height: 1.25;
 	}
 	
-	#text07 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 3.5em;
+	#text13 {
+		letter-spacing: 1.3125rem;
+		width: calc(100% + 1.3125rem);
+		font-size: 1em;
 		line-height: 1.25;
 	}
 	
-	#text08 {
+	#reachme {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 3.5em;
+		font-size: 2.5em;
 		line-height: 1.25;
 	}
 	
-	#text09 {
+	#text-line {
+		letter-spacing: 1.3125rem;
+		width: calc(100% + 1.3125rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
+	#knowsthis {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.5em;
+		line-height: 1.25;
+	}
+	
+	#knowsthisdesc {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 2em;
@@ -2214,11 +2402,39 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	#text02 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 3.5em;
+		font-size: 2.5em;
 		line-height: 1.25;
 	}
 	
-	#text06 {
+	#text07 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2em;
+		line-height: 1.25;
+	}
+	
+	#text10 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.5em;
+		line-height: 1.25;
+	}
+	
+	#text11 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2em;
+		line-height: 1.25;
+	}
+	
+	#text12 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.5em;
+		line-height: 1.25;
+	}
+	
+	#wantstodesc {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 2em;
@@ -2293,7 +2509,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#container05.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#maincont > .wrapper > .inner {
@@ -2308,7 +2524,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#maincont.columns > .wrapper > .inner > .full {
-		min-height: 12.5rem;
+		min-height: calc(12.5rem - (var(--padding-vertical) * 2));
 	}
 	
 	#spacer2 > .wrapper > .inner {
@@ -2334,23 +2550,47 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 3.5em;
 	}
 	
-	#text07 {
-		font-size: 3.5em;
+	#text13 {
+		font-size: 1em;
 	}
 	
-	#text08 {
-		font-size: 3.5em;
+	#reachme {
+		font-size: 2em;
 	}
 	
-	#text09 {
+	#text-line {
+		font-size: 1em;
+	}
+	
+	#knowsthis {
+		font-size: 2em;
+	}
+	
+	#knowsthisdesc {
 		font-size: 1.5em;
 	}
 	
 	#text02 {
-		font-size: 3.5em;
+		font-size: 2em;
 	}
 	
-	#text06 {
+	#text07 {
+		font-size: 1.5em;
+	}
+	
+	#text10 {
+		font-size: 2em;
+	}
+	
+	#text11 {
+		font-size: 1.5em;
+	}
+	
+	#text12 {
+		font-size: 2em;
+	}
+	
+	#wantstodesc {
 		font-size: 1.5em;
 	}
 	
